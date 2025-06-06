@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Certificacion JBT | cerTI</title>
+    <style>
+        #lista {
+            overflow: scroll;
+
+            max-width: 200px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <form>
+        <input id="busqueda" value="2002-07-29">
+        <button type="submit">Buscar</button> <!--Boton asociado a la busqueda de elementos-->
+    </form>
+    <ul id="lista">
+        <!--Aqui deberian de mostrarse los elementos solicitados dinamicamente con JS-->
+    </ul>
+
+    <script>
+
+        // Variable que se usara para entregar los resultados
+        let TEXTO_DE_RESPUESTA = ""
+
+        ////////////////////////////// TU CODIGO AQUI ABAJO
+
+        
+
+
+
+
+
+
+        
+
+
+        ///////////////////////////// 
+    
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script> // Funcion encargada de guardar la respuesta
+        function save_response(...args) {
+            let all_info = `${args}`
+            var blob = new Blob([all_info], { type: 'text/plain;charset=utf-8' });
+            saveAs(blob, "response.txt");
+        }
+    </script>
+</body>
+
+</html>
